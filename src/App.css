@@ -1,38 +1,82 @@
-.App {
-  text-align: center;
+.modal-wide {
+  width: 680px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.footer {
+  padding-bottom: 8px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.bg-image {
+  right: 430px;
+  top: 0;
+  width: 1380px;
+  height: 310px;
+  margin-top: 310px;
+  margin-bottom: 300px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (min-width: 768px) {
+  .truck {
+    width: 140%;
+    height: 140%;
   }
-  to {
-    transform: rotate(360deg);
+
+  .bg-image {
+    right: 1600px;
+    top: 0;
+    width: 4952px;
+    height: 1057px;
+    margin-top: 0px;
+    margin-bottom: 0%;
+  }
+
+  .dropdown-width {
+    width: 172px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .truck {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .form-width {
+    width: 682px;
+  }
+}
+
+.option-selected {
+  padding-top: 16px;
+  padding-bottom: 14px;
+}
+
+.options_value {
+  margin-bottom: -2px;
+}
+
+.error-padding {
+  padding-top: 36px;
+}
+
+/* media rules to overcome IE flex display issues */
+@media screen and (min-width: 768px) and (-ms-high-contrast: active),
+  screen and (min-width: 768px) and (-ms-high-contrast: none) {
+  .ie-center {
+    -ms-flex-align: center;
+    margin-left: -550px;
+  }
+}
+@media screen and (min-width: 1280px) and (-ms-high-contrast: active),
+  screen and (min-width: 1280px) and (-ms-high-contrast: none) {
+  .ie-center {
+    -ms-flex-align: center;
+    margin-left: -1000px;
   }
 }
